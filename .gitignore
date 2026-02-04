@@ -38,6 +38,8 @@ CLAUDE.local.md
 .claude/settings.local.json
 
 z*/
+!docs/zh-cn/
+!website/src/content/docs/zh-cn/
 
 _bmad
 _bmad-output
@@ -54,7 +56,6 @@ _bmad-output
 .codex
 .github/chatmodes
 .github/agents
-.agent
 .agentvibes
 .kiro
 .roo

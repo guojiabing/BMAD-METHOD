@@ -1,9 +1,9 @@
-name: Deploy Documentation
+name: 部署 docs
 
 on:
   push:
     branches:
-      - main
+      - docs
     paths:
       - "docs/**"
       - "src/modules/*/docs/**"

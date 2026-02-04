@@ -41,6 +41,18 @@ export default defineConfig({
       title: 'BMAD Method',
       tagline: 'AI-driven agile development with specialized agents and workflows that scale from bug fixes to enterprise platforms.',
 
+      defaultLocale: 'root',
+      locales: {
+        root: {
+          label: 'English',
+          lang: 'en',
+        },
+        'zh-cn': {
+          label: '简体中文',
+          lang: 'zh-CN',
+        },
+      },
+
       logo: {
         light: './public/img/bmad-light.png',
         dark: './public/img/bmad-dark.png',
@@ -88,25 +100,44 @@ export default defineConfig({
       customCss: ['./src/styles/custom.css'],
 
       // Sidebar configuration (Diataxis structure)
+      // Sidebar configuration (Diataxis structure)
       sidebar: [
-        { label: 'Welcome', slug: 'index' },
+        {
+          label: 'Welcome',
+          translations: {
+            'zh-CN': '欢迎',
+          },
+          slug: 'index',
+        },
         {
           label: 'Tutorials',
+          translations: {
+            'zh-CN': '教程',
+          },
           collapsed: false,
           autogenerate: { directory: 'tutorials' },
         },
         {
           label: 'How-To Guides',
+          translations: {
+            'zh-CN': '操作指南',
+          },
           collapsed: true,
           autogenerate: { directory: 'how-to' },
         },
         {
           label: 'Explanation',
+          translations: {
+            'zh-CN': '原理解析',
+          },
           collapsed: true,
           autogenerate: { directory: 'explanation' },
         },
         {
           label: 'Reference',
+          translations: {
+            'zh-CN': '参考手册',
+          },
           collapsed: true,
           autogenerate: { directory: 'reference' },
         },
